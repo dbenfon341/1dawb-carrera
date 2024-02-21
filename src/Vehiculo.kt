@@ -7,22 +7,23 @@
 
 
 
-open class Vehiculo(marca: String, modelo: String, capacidadCombustible: Float, combustibleActual: Float, kilometrosActuales: Int) {
+open class Vehiculo(var marca: String, var modelo: String, var capacidadCombustible: Float, var combustibleActual: Float, var kilometrosActuales: Int) {
 
-    fun obtenerInformacion() : String{
+    open fun obtenerInformacion() {
         return
     }
 
-    fun calcularAutonomia() : Int{
+    open fun calcularAutonomia() {
         return
     }
 
-    fun realizaViaje(distanncia: Int) : Int{
+    open fun realizaViaje(distancia: Float){
         return
     }
 
-    fun repostar(cantidad: Float) : Float{
+    open fun repostar(cantidad: Float) {
         return
     }
+
 
 }
